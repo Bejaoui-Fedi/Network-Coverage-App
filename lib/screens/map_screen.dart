@@ -39,7 +39,7 @@ class MapScreen extends ConsumerWidget {
               userAgentPackageName: 'com.orangedrs.networkcoverage',
             ),
             MarkerLayer(
-              markers: measurements.map((m) {
+              markers: measurements.reversed.map((m) {
                 return Marker(
                   point: LatLng(m.latitude, m.longitude),
                   width: 30,
